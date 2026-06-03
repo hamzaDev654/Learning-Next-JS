@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///E:/refresh/v-1/src/app/icon.png.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 500, height: 486 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,uIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///E:/refresh/v-1/src/app/page.tsx"],"sourcesContent":["export default function Home() {\n  console.log(\"executing....\");\n  return (\n    <main>\n      <img src=\"/logo.png\" alt=\"A server surrounded by magic sparkles.\" />\n      <h1>Welcome to this NextJS Course!</h1>\n      <p>🔥 Let&apos;s get started! 🔥</p>\n    </main>\n  );\n}\n"],"names":["Home","console","log","src","alt"],"mappings":";;;;;;AAAe,SAASA;IACtBC,QAAQC,GAAG,CAAC;IACZ,qBACE,8OAAC;;0BACC,8OAAC;gBAAIC,KAAI;gBAAYC,KAAI;;;;;;0BACzB,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
+}

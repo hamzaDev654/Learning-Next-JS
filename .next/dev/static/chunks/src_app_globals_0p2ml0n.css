@@ -1,0 +1,72 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap";
+/* [project]/src/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: Open Sans, sans-serif;
+}
+
+:root {
+  --background: linear-gradient(180deg, #232029, #231e2d);
+  --foreground: #ddd8e4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  text-align: center;
+  margin: 5rem auto;
+}
+
+main img {
+  object-fit: cover;
+  filter: drop-shadow(0 0 4px #f6c363);
+  width: 8rem;
+  height: 8rem;
+}
+
+h1 {
+  color: #ede9f3;
+  margin: 3rem auto;
+  font-family: Poppins, sans-serif;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+p a {
+  color: #f4c33d;
+  border-bottom: 2px solid #f4c33d;
+  padding-bottom: .05rem;
+  text-decoration: none;
+}
+
+p a:hover, p a:active {
+  color: #bd3df4;
+  border-color: #bd3df4;
+}
+
+/*# sourceMappingURL=src_app_globals_0p2ml0n.css.map*/

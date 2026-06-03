@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///E:/refresh/v-1/src/app/icon.png.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 500, height: 486 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,uIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///E:/refresh/v-1/src/app/blog/page.tsx"],"sourcesContent":["import Link from \"next/link\";\r\nimport { FC } from \"react\";\r\n\r\nconst BlogPage: FC = () => {\r\n  return (\r\n    <main>\r\n      <h1>The Blog</h1>\r\n      <p>\r\n        <Link href=\"/blog/post-1\">Post 1</Link>\r\n      </p>\r\n      <p>\r\n        <Link href=\"/blog/post-1\">Post 1</Link>\r\n      </p>\r\n    </main>\r\n  );\r\n};\r\n\r\nexport default BlogPage;\r\n"],"names":["BlogPage","href"],"mappings":";;;;;AAAA;;;AAGA,MAAMA,WAAe;IACnB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BACC,cAAA,8OAAC,0LAAI;oBAACC,MAAK;8BAAe;;;;;;;;;;;0BAE5B,8OAAC;0BACC,cAAA,8OAAC,0LAAI;oBAACA,MAAK;8BAAe;;;;;;;;;;;;;;;;;AAIlC;uCAEeD"}}]
+}

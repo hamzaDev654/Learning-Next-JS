@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///E:/refresh/v-1/src/app/icon.png.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 500, height: 486 }\n"],"names":["src","width","height"],"mappings":";;;;AAAA;;uCACe;IAAEA,KAAAA,uIAAG;IAAEC,OAAO;IAAKC,QAAQ;AAAI"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///E:/refresh/v-1/src/app/blog/%5Bslug%5D/page.tsx"],"sourcesContent":["import { FC } from \"react\";\r\n\r\ntype Props = { params: Promise<{ slug: string }> };\r\n\r\nconst BlogDetails: FC<Props> = async ({ params }) => {\r\n  const { slug } = await params;\r\n  return (\r\n    <>\r\n      <h1>Blog Details</h1>\r\n      <p>{slug}</p>\r\n    </>\r\n  );\r\n};\r\n\r\nexport default BlogDetails;\r\n"],"names":["BlogDetails","params","slug"],"mappings":";;;;;;AAIA,MAAMA,cAAyB,OAAO,EAAEC,MAAM,EAAE;IAC9C,MAAM,EAAEC,IAAI,EAAE,GAAG,MAAMD;IACvB,qBACE;;0BACE,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAGC;;;;;;;;AAGV;uCAEeF"}}]
+}
