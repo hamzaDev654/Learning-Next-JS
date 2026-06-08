@@ -10,9 +10,10 @@ const MealsGrid: FC<props> = ({ meals }) => {
   return (
     <ul className={style.meals}>
       {meals.map((meal, index) => {
+        const slug = meal.slug ?? "";
         return (
           <li key={meal.id}>
-            <Mealitem {...meal} preload={index === 0} />
+            <Mealitem {...meal} slug={slug} preload={index === 0} />
           </li>
         );
       })}

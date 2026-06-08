@@ -1,10 +1,12 @@
-import { FC } from "react";
+"use client";
+import { FC, useActionState } from "react";
 import classes from "@/style/share-meal.module.css";
-import ImagePicker from "@/components/meals/ImagePicker";
 import { shareMeal } from "../../../../lib/action";
+import ImagePicker from "@/components/meals/ImagePicker";
 import MealsFormSubmit from "@/components/meals/MealsFormSubmit";
 
 const ShareMealsPage: FC = () => {
+  const [state, formAction] = useActionState(shareMeal, { message: "" });
   return (
     <>
       <header className={classes.header}>
@@ -14,12 +16,7 @@ const ShareMealsPage: FC = () => {
         <p>Or any other meal you feel needs sharing!</p>
       </header>
       <main className={classes.main}>
-        <form
-          className={classes.form}
-          action={async (formData: FormData) => {
-            await shareMeal(formData);
-          }}
-        >
+        <form className={classes.form} action={formAction}>
           <div className={classes.row}>
             <p>
               <label htmlFor="name">Your name</label>
@@ -43,6 +40,7 @@ const ShareMealsPage: FC = () => {
             <textarea id="instructions" name="instructions" rows={10} required></textarea>
           </p>
           <ImagePicker label="Your image" name="image" />
+          {state.message && <p>{state.message}</p>}
           <p className={classes.actions}>
             <MealsFormSubmit />
           </p>
